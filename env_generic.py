@@ -150,7 +150,7 @@ def init_machine_config(machine: MachineSpec,
             try:
                 cc, gcc_binaries = resolve_gcc_binaries()
                 binaries.update(gcc_binaries)
-                common_flags += ["-m32"]
+                # common_flags += ["-m32"]
             except CompilerNotFoundError:
                 pass
 
